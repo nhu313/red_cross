@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="span6 offset3">
                     <h3>Form</h3>
-                    <form id="main_form" action="/url">
+                    <form id="main_form" action="/main/new">
                         <input class="span5" name="dispatcher" placeholder="DISPATCHER:">
                         <input class="span5" name="incident_address" placeholder="INCIDENT ADDRESS:">
                         <input class="span5" name="city" placeholder="CITY:">
@@ -90,12 +90,12 @@
                         <input class="span5" name="date_time" placeholder="DATE AND TIME OF INCIDENT:">
                         <input class="span5" name="families" placeholder="Number of Total Families:">
                         <input class="span5" name="total_individuals" placeholder="Number of Total Individuals:">
-                       
-                        <textarea class="span5" name="all_clients" placeholder="Name(s)/Location(s) and Phone Number(s) of ALL Client(s):"></textarea>  
-                        <a href="#" id="add"> Add another Client </a> 
+
+                        <textarea class="span5" name="all_clients" placeholder="Name(s)/Location(s) and Phone Number(s) of ALL Client(s):"></textarea>
+                        <a href="#" id="add"> Add another Client </a>
                         <p>
                         </p>
-                        
+
                         <input class="span5" name="disaster_type" placeholder="TYPE OF DISASTER:">
                         <input class="span5" name="case_id" placeholder="CAS INCIDENT ID:">
                         <input class="span5" name="dispatcher_num" placeholder="DISASTER #:">
@@ -120,11 +120,11 @@
                         <p>***FOR OFFICE USE ONLY***</p>
                         <p>TRAINEE FOLLOW UP</p>
                         <input name="date_followed_up" placeholder="DATE FOLLOWED UP">
-                        
+
                         <input class="span5" name="" placeholder="NAME OF PERSON DOING FOLLOW UP:">
                         <input class="span5" name="" placeholder="RESULT OF FOLLOW UP:">
                         <input class="span5" name="" placeholder="COORDINATOR CONFIRMED:">
-                        <div class="form-actions">  
+                        <div class="form-actions">
                         <input class="btn span3 btn-primary" type="submit" id="submit" placeholder="submit">
                         <button type="submit" class="btn btn-primary">Save changes</button>
                         <button type="button" class="btn btn-danger">Cancel</button>
@@ -155,8 +155,7 @@
 
 
 
-
-
+<h1><%=@name%></h1>
 
 <ol>
   <li><%= link_to "stock types", stock_types_path%></li>
