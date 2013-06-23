@@ -11,10 +11,38 @@ class MainController < ApplicationController
   end
 
   def create_incident
-    name = params[:dispatcher]
-
-
-    Incident.create(name: name, )
+    Incident.create(
+      notification_date: params[:notification_date]
+      notification_time: params[:notification_time]
+      notification_agency_id: params[:notification_agency_id]
+      dispatcher_id: params[:dispatcher_id]
+      address_line1: params[:address_line1]
+      city: params[:city]
+      state: params[:state]
+      county: params[:county]
+      postal_code: params[:postal_code]
+      rc_chapter: params[:rc_chapter]
+      verification_date: params[:verification_date]
+      verification_time: params[:verification_time]
+      verification_agency: params[:verification_agency]
+      memo_verification_info: params[:memo_verification_info]
+      incident_date: params[:incident_date]
+      incident_time: params[:incident_time]
+      nbr_affected_families: params[:nbr_affected_families]
+      nbr_affected_individuals: params[:nbr_affected_individuals]
+      events_sequence: params[:events_sequence]
+      dwelling_id: params[:dwelling_id]
+      damange_assessment: params[:damange_assessment]
+      injuries_or_death: params[:injuries_or_death]
+      national_incident_id: params[:national_incident_id]
+      trainee_follow_up: params[:trainee_follow_up]
+      date_follow_up: params[:date_follow_up]
+      trainee_name: params[:trainee_name]
+      person_following_up: params[:person_following_up]
+      follow_up_result: params[:follow_up_result]
+      created_at: params[:created_at]               
+      updated_at: params[:updated_at] 
+      )              
 
 
   end
