@@ -21,6 +21,18 @@ class MainController < ApplicationController
 
   def create_incident_responder
 
+    IncidentResponder.create(date_left_scene: params[:date_left_scene], #needs to be added to form
+                             date_on_scene: params[:date_on_scene, #needs adding
+                             dispatched_date: params[:dispatched_date], #needs adding
+                             dispatched_time: params[:dispatched_time], 
+                             dispatcher_id: params[:dispatcher], 
+                             incident_id:, #needs adding
+                             initial_responder: params[:initial_responder], #needs adding
+                             staff_id:, #needs adding
+                             time_left_scene: params[:time_left_scene] #needs adding
+                             time_on_scene: params[:time_on_scene] #needs adding
+                             )
+
   end
 
   def create_incident_assistance
