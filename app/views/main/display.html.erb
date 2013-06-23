@@ -1,3 +1,163 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 60px;
+                padding-bottom: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Test Form</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li class="nav-header">Nav header</li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form pull-right">
+                            <input class="span2" type="text" placeholder="Email">
+                            <input class="span2" type="password" placeholder="Password">
+                            <button type="submit" class="btn">Sign in</button>
+                        </form>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- Main hero unit for a primary marketing message or call to action -->
+            <div class="hero-unit">
+                <h2>DISASTER INCIDENT WORKSHEET</h2>
+            </div>
+
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="span6 offset3">
+                    <h3>Form</h3>
+                    <form id="main_form" action="/url">
+                        <input class="span5" name="dispatcher" placeholder="DISPATCHER:">
+                        <input class="span5" name="incident_address" placeholder="INCIDENT ADDRESS:">
+                        <input class="span5" name="city" placeholder="CITY:">
+                        <input class="span5" name="state" placeholder="STATE:">
+                        <input class="span5" name="ZIP" placeholder="ZIP (very important):">
+                        <input class="span5" name="county" placeholder="COUNTY (very important):">
+                        <input class="span5" name="notified_by" placeholder="NOTIFIED BY (agency/name):">
+                        <input class="span5" name="date_time_" placeholder="Notification Date and Time:">
+                        <input class="span5" name="verification_time" placeholder="Verification TIME and Information (agency/name):">
+                        <input class="span5" name="date_time" placeholder="DATE AND TIME OF INCIDENT:">
+                        <input class="span5" name="families" placeholder="Number of Total Families:">
+                        <input class="span5" name="total_individuals" placeholder="Number of Total Individuals:">
+                       
+                        <textarea class="span5" name="all_clients" placeholder="Name(s)/Location(s) and Phone Number(s) of ALL Client(s):"></textarea>  
+                        <a href="#" id="add"> Add another Client </a> 
+                        <p>
+                        </p>
+                        
+                        <input class="span5" name="disaster_type" placeholder="TYPE OF DISASTER:">
+                        <input class="span5" name="case_id" placeholder="CAS INCIDENT ID:">
+                        <input class="span5" name="dispatcher_num" placeholder="DISASTER #:">
+                        <input class="span5" name="dispatch_time" placeholder="DISPATCHED TIME:">
+                        <input class="span5" name="arc_person" placeholder="ARC PERSON RECEIVING DISPATCH CALLTIME RESPONDERS ON SCENE:">
+                        <input class="span5" name="time_left" placeholder="TIME RESPONDERS LEFT SCENE:">
+                        <textarea class="span5" name="all_personel_responding" placeholder="NAMES AND PHONE NUMBERS ALL PERSONNEL RESPONDING(Mass Care, Health Services, DMH, etc.):"></textarea>
+                        <input class="span5" name="" placeholder="SEQUENCEOF EVENTS">
+                        <input class="span5" name"dwelling_type" placehoder="TYPE OF DWELLING:">
+                        <textarea class="span5" name="damage_assesment" placeholder="DAMAGE ASSESSMENT(broken down by room/unit):"></textarea>
+                        <input class="span5" name="adults_serviced" placeholder="NUMBER OF TOTAL ADULTS SERVICED:">
+                        <input class="span5" name="children_serviced" placeholder="NUMBER OFTOTAL CHILDREN SERVICED:">
+                        <textarea class="span5" name="injuries_fatalities" placeholder="ANY INJURIES OR DEATHS? (explain)LIST OF TENANTS (HEAD OF HOUSEHOLD ONLY)  / PHONE #/UNITS AFFECTED/LANDLORD INFO (if available):"></textarea>
+                        <input class="span5" name="unserviced_clients" placeholder="UNSERVICED CLIENTS/UNITS AND WHYCAC # AND AMOUNTS PROVIDED:">
+                        <input class="span5" name="stock_provided" placeholder="STOCK PROVIDED (Comfort Kits/PrePacks/Teddy Bears):">
+                        <input class="span5" name="case_number_901" placeholder="CASE NUMBER FROM 901(s):">
+                        <input class="span5" name="services" placeholder="MASS CARE SERVICES?HEALTH SERVICES?MENTAL HEALTH SERVICES?PARTNER SERVICES?DISASTER SERVICES TECHNOLOGY?">
+                        <textarea class="span5" name="additional_info" placeholder="ANY ADDITIONAL INFO:"></textarea>
+                        <input class="span5" name="total_cost" placeholder="Total cost">
+                        <input class="span5" name="client_language" placeholder="Language of client">
+
+                        <p>***FOR OFFICE USE ONLY***</p>
+                        <p>TRAINEE FOLLOW UP</p>
+                        <input name="date_followed_up" placeholder="DATE FOLLOWED UP">
+                        
+                        <input class="span5" name="" placeholder="NAME OF PERSON DOING FOLLOW UP:">
+                        <input class="span5" name="" placeholder="RESULT OF FOLLOW UP:">
+                        <input class="span5" name="" placeholder="COORDINATOR CONFIRMED:">
+                        <div class="form-actions">  
+                        <input class="btn span3 btn-primary" type="submit" id="submit" placeholder="submit">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <hr>
+
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
 <ol>
   <li><%= link_to "stock types", stock_types_path%></li>
   <li><%= link_to "genders", genders_path%></li>
