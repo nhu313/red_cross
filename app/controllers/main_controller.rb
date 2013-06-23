@@ -51,7 +51,7 @@ class MainController < ApplicationController
 
     IncidentResponder.create(
                              date_left_scene: params[:date_left_scene], #needs to be added to form
-                             date_on_scene: params[:date_on_scene, #needs adding
+                             date_on_scene: params[:date_on_scene], #needs adding
                              dispatched_date: params[:dispatched_date], #needs adding
                              dispatched_time: params[:dispatched_time],
                              dispatcher_id: params[:dispatcher],
