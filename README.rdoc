@@ -1,6 +1,6 @@
 To run the application:
 1. Navigate to folder you want to store the file
-2. git clone https://github.com/nhu313/red_cross.git
+2. git clone "https://github.com/nhu313/red_cross.git"
 3. rake db:migrate
 4. rails s
-5. In your browser, open: http://localhost:3000
+5. In your browser, open: "http://localhost:3000"
