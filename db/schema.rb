@@ -109,11 +109,11 @@ ActiveRecord::Schema.define(:version => 20130623044027) do
     t.integer  "staff_id"
     t.integer  "dispatcher_id"
     t.date     "dispatched_date"
-    t.time     "dispatched_time"
+    t.string     "dispatched_time"
     t.date     "date_on_scene"
-    t.time     "time_on_scene"
+    t.string     "time_on_scene"
     t.date     "date_left_scene"
-    t.time     "time_left_scene"
+    t.string     "time_left_scene"
     t.boolean  "initial_responder"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
@@ -129,8 +129,8 @@ ActiveRecord::Schema.define(:version => 20130623044027) do
   end
 
   create_table "incidents", :force => true do |t|
-    t.date     "notification_date"
-    t.time     "notification_time"
+    t.string     "notification_date"
+    t.string     "notification_time"
     t.integer  "notification_agency_id"
     t.integer  "dispatcher_id"
     t.string   "address_line1"
@@ -139,12 +139,12 @@ ActiveRecord::Schema.define(:version => 20130623044027) do
     t.string   "county"
     t.string   "postal_code"
     t.integer  "rc_chapter"
-    t.date     "verification_date"
-    t.time     "verification_time"
+    t.string     "verification_date"
+    t.string     "verification_time"
     t.integer  "verification_agency"
     t.text     "memo_verification_info"
     t.date     "incident_date"
-    t.time     "incident_time"
+    t.string     "incident_time"
     t.integer  "nbr_affected_families"
     t.integer  "nbr_affected_individuals"
     t.text     "events_sequence"
