@@ -21,26 +21,27 @@ class MainController < ApplicationController
 
   def create_incident_responder
     dispatcher = params[:dispatcher]
-    #dispatched_date = params[:dispatched_date]
+    dispatched_date = params[:dispatched_date]
     dispatched_time = params[:dispatched_time]
-    #date_on_scene = params[:date_on_scene]
-    #time_on_scene = params[:time_on_scene]
-    #date_left_scene = params[:date_left_scene]
-    #time_left_scene = params[:time_left_scene]
-    #initial_responder = params[:initial_responder]
+    date_on_scene = params[:date_on_scene]
+    time_on_scene = params[:time_on_scene]
+    date_left_scene = params[:date_left_scene]
+    time_left_scene = params[:time_left_scene]
+    initial_responder = params[:initial_responder]
     ###incident_id
     ###staff_id
 
-    IncidentResponder.create(#date_left_scene: date_left_scene, 
-                             #date_on_scene: date_on_scene, 
-                             #dispatched_date: dispatched_date, 
-                             dispatched_time: dispatched_time, 
-                             dispatcher_id: dispatcher, 
-                             #incident_id:, 
-                             #initial_responder: initial_responder, 
-                             #staff_id:, 
-                             #time_left_scene: time_left_scene,
-                             #time_on_scene: time_on_scene)
+    IncidentResponder.create(date_left_scene: params[:date_left_scene], #needs to be added to form
+                             date_on_scene: params[:date_on_scene, #needs adding
+                             dispatched_date: params[:dispatched_date], #needs adding
+                             dispatched_time: params[:dispatched_time], 
+                             dispatcher_id: params[:dispatcher], 
+                             incident_id:, #needs adding
+                             initial_responder: params[:initial_responder], #needs adding
+                             staff_id:, #needs adding
+                             time_left_scene: params[:time_left_scene] #needs adding
+                             time_on_scene: params[:time_on_scene] #needs adding
+                             )
 
   end
 
