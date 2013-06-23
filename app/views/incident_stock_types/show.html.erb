@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Incident:</b>
+  <%= @incident_stock_type.incident_id %>
+</p>
+
+<p>
+  <b>Family:</b>
+  <%= @incident_stock_type.family_id %>
+</p>
+
+<p>
+  <b>Stock type:</b>
+  <%= @incident_stock_type.stock_type_id %>
+</p>
+
+<p>
+  <b>Stock amount:</b>
+  <%= @incident_stock_type.stock_amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_incident_stock_type_path(@incident_stock_type) %> |
+<%= link_to 'Back', incident_stock_types_path %>

@@ -1,0 +1,2 @@
+module DisasterTypesHelper
+end

@@ -1,0 +1,129 @@
+<%= form_for(@incident) do |f| %>
+  <% if @incident.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@incident.errors.count, "error") %> prohibited this incident from being saved:</h2>
+
+      <ul>
+      <% @incident.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :notification_date %><br />
+    <%= f.date_select :notification_date %>
+  </div>
+  <div class="field">
+    <%= f.label :notification_time %><br />
+    <%= f.time_select :notification_time %>
+  </div>
+  <div class="field">
+    <%= f.label :notification_agency_id %><br />
+    <%= f.number_field :notification_agency_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dispatcher_id %><br />
+    <%= f.number_field :dispatcher_id %>
+  </div>
+  <div class="field">
+    <%= f.label :address_line1 %><br />
+    <%= f.text_field :address_line1 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :county %><br />
+    <%= f.text_field :county %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_code %><br />
+    <%= f.text_field :postal_code %>
+  </div>
+  <div class="field">
+    <%= f.label :rc_chapter %><br />
+    <%= f.number_field :rc_chapter %>
+  </div>
+  <div class="field">
+    <%= f.label :verification_date %><br />
+    <%= f.date_select :verification_date %>
+  </div>
+  <div class="field">
+    <%= f.label :verification_time %><br />
+    <%= f.time_select :verification_time %>
+  </div>
+  <div class="field">
+    <%= f.label :verification_agency %><br />
+    <%= f.text_field :verification_agency %>
+  </div>
+  <div class="field">
+    <%= f.label :memo_verification_info %><br />
+    <%= f.text_area :memo_verification_info %>
+  </div>
+  <div class="field">
+    <%= f.label :incident_date %><br />
+    <%= f.date_select :incident_date %>
+  </div>
+  <div class="field">
+    <%= f.label :incident_time %><br />
+    <%= f.time_select :incident_time %>
+  </div>
+  <div class="field">
+    <%= f.label :nbr_affected_families %><br />
+    <%= f.number_field :nbr_affected_families %>
+  </div>
+  <div class="field">
+    <%= f.label :nbr_affected_individuals %><br />
+    <%= f.number_field :nbr_affected_individuals %>
+  </div>
+  <div class="field">
+    <%= f.label :events_sequence %><br />
+    <%= f.text_area :events_sequence %>
+  </div>
+  <div class="field">
+    <%= f.label :dwelling_id %><br />
+    <%= f.number_field :dwelling_id %>
+  </div>
+  <div class="field">
+    <%= f.label :damange_assessment %><br />
+    <%= f.text_area :damange_assessment %>
+  </div>
+  <div class="field">
+    <%= f.label :injuries_or_death %><br />
+    <%= f.text_field :injuries_or_death %>
+  </div>
+  <div class="field">
+    <%= f.label :national_incident_id %><br />
+    <%= f.number_field :national_incident_id %>
+  </div>
+  <div class="field">
+    <%= f.label :trainee_follow_up %><br />
+    <%= f.text_field :trainee_follow_up %>
+  </div>
+  <div class="field">
+    <%= f.label :date_follow_up %><br />
+    <%= f.text_field :date_follow_up %>
+  </div>
+  <div class="field">
+    <%= f.label :trainee_name %><br />
+    <%= f.text_field :trainee_name %>
+  </div>
+  <div class="field">
+    <%= f.label :person_following_up %><br />
+    <%= f.text_field :person_following_up %>
+  </div>
+  <div class="field">
+    <%= f.label :follow_up_result %><br />
+    <%= f.text_field :follow_up_result %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

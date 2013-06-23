@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Incident:</b>
+  <%= @incident_assistance.incident_id %>
+</p>
+
+<p>
+  <b>Family:</b>
+  <%= @incident_assistance.family_id %>
+</p>
+
+<p>
+  <b>Unit floor:</b>
+  <%= @incident_assistance.unit_floor %>
+</p>
+
+<p>
+  <b>Case number:</b>
+  <%= @incident_assistance.case_number %>
+</p>
+
+<p>
+  <b>Nbr adult receiving assistance:</b>
+  <%= @incident_assistance.nbr_adult_receiving_assistance %>
+</p>
+
+<p>
+  <b>Nbr children receiving assistance:</b>
+  <%= @incident_assistance.nbr_children_receiving_assistance %>
+</p>
+
+<p>
+  <b>Mass care service:</b>
+  <%= @incident_assistance.mass_care_service %>
+</p>
+
+<p>
+  <b>Health services:</b>
+  <%= @incident_assistance.health_services %>
+</p>
+
+<p>
+  <b>Partner services:</b>
+  <%= @incident_assistance.partner_services %>
+</p>
+
+<p>
+  <b>Disaster services technology:</b>
+  <%= @incident_assistance.disaster_services_technology %>
+</p>
+
+<p>
+  <b>Addition info:</b>
+  <%= @incident_assistance.addition_info %>
+</p>
+
+<p>
+  <b>Unserviced:</b>
+  <%= @incident_assistance.unserviced %>
+</p>
+
+<p>
+  <b>Unserviced reason:</b>
+  <%= @incident_assistance.unserviced_reason %>
+</p>
+
+
+<%= link_to 'Edit', edit_incident_assistance_path(@incident_assistance) %> |
+<%= link_to 'Back', incident_assistances_path %>

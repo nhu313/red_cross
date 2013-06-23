@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  incident_id: 1
+  family_id: 1
+  unit_floor: MyString
+  case_number: 1
+  nbr_adult_receiving_assistance: 
+  nbr_children_receiving_assistance: 
+  mass_care_service: MyText
+  health_services: MyText
+  partner_services: MyText
+  disaster_services_technology: MyText
+  addition_info: MyText
+  unserviced: false
+  unserviced_reason: MyString
+
+two:
+  incident_id: 1
+  family_id: 1
+  unit_floor: MyString
+  case_number: 1
+  nbr_adult_receiving_assistance: 
+  nbr_children_receiving_assistance: 
+  mass_care_service: MyText
+  health_services: MyText
+  partner_services: MyText
+  disaster_services_technology: MyText
+  addition_info: MyText
+  unserviced: false
+  unserviced_reason: MyString

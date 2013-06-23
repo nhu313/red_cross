@@ -1,0 +1,47 @@
+<h1>Listing incident_assistances</h1>
+
+<table>
+  <tr>
+    <th>Incident</th>
+    <th>Family</th>
+    <th>Unit floor</th>
+    <th>Case number</th>
+    <th>Nbr adult receiving assistance</th>
+    <th>Nbr children receiving assistance</th>
+    <th>Mass care service</th>
+    <th>Health services</th>
+    <th>Partner services</th>
+    <th>Disaster services technology</th>
+    <th>Addition info</th>
+    <th>Unserviced</th>
+    <th>Unserviced reason</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @incident_assistances.each do |incident_assistance| %>
+  <tr>
+    <td><%= incident_assistance.incident_id %></td>
+    <td><%= incident_assistance.family_id %></td>
+    <td><%= incident_assistance.unit_floor %></td>
+    <td><%= incident_assistance.case_number %></td>
+    <td><%= incident_assistance.nbr_adult_receiving_assistance %></td>
+    <td><%= incident_assistance.nbr_children_receiving_assistance %></td>
+    <td><%= incident_assistance.mass_care_service %></td>
+    <td><%= incident_assistance.health_services %></td>
+    <td><%= incident_assistance.partner_services %></td>
+    <td><%= incident_assistance.disaster_services_technology %></td>
+    <td><%= incident_assistance.addition_info %></td>
+    <td><%= incident_assistance.unserviced %></td>
+    <td><%= incident_assistance.unserviced_reason %></td>
+    <td><%= link_to 'Show', incident_assistance %></td>
+    <td><%= link_to 'Edit', edit_incident_assistance_path(incident_assistance) %></td>
+    <td><%= link_to 'Destroy', incident_assistance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Incident assistance', new_incident_assistance_path %>

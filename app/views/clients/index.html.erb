@@ -1,0 +1,65 @@
+<h1>Listing clients</h1>
+
+<table>
+  <tr>
+    <th>Family</th>
+    <th>Salutation</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Suffix</th>
+    <th>Address line1</th>
+    <th>Address line2</th>
+    <th>Address line3</th>
+    <th>City</th>
+    <th>State</th>
+    <th>County</th>
+    <th>Postal code</th>
+    <th>Home phone</th>
+    <th>Work phone</th>
+    <th>Mobile phone</th>
+    <th>Date of birth</th>
+    <th>Date deceased</th>
+    <th>Head of house hold</th>
+    <th>Ethnicity type</th>
+    <th>Language</th>
+    <th>Gender type</th>
+    <th>Economic status type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @clients.each do |client| %>
+  <tr>
+    <td><%= client.family_id %></td>
+    <td><%= client.salutation %></td>
+    <td><%= client.first_name %></td>
+    <td><%= client.last_name %></td>
+    <td><%= client.suffix %></td>
+    <td><%= client.address_line1 %></td>
+    <td><%= client.address_line2 %></td>
+    <td><%= client.address_line3 %></td>
+    <td><%= client.city %></td>
+    <td><%= client.state %></td>
+    <td><%= client.county %></td>
+    <td><%= client.postal_code %></td>
+    <td><%= client.home_phone %></td>
+    <td><%= client.work_phone %></td>
+    <td><%= client.mobile_phone %></td>
+    <td><%= client.date_of_birth %></td>
+    <td><%= client.date_deceased %></td>
+    <td><%= client.head_of_house_hold %></td>
+    <td><%= client.ethnicity_type_id %></td>
+    <td><%= client.language_id %></td>
+    <td><%= client.gender_type_id %></td>
+    <td><%= client.economic_status_type_id %></td>
+    <td><%= link_to 'Show', client %></td>
+    <td><%= link_to 'Edit', edit_client_path(client) %></td>
+    <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Client', new_client_path %>

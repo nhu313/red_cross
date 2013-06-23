@@ -1,0 +1,61 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  notification_date: 2013-06-22
+  notification_time: 2013-06-22 23:28:18
+  notification_agency_id: 1
+  dispatcher_id: 1
+  address_line1: MyString
+  city: MyString
+  state: MyString
+  county: MyString
+  postal_code: MyString
+  rc_chapter: 1
+  verification_date: 2013-06-22
+  verification_time: 2013-06-22 23:28:18
+  verification_agency: 
+  memo_verification_info: MyText
+  incident_date: 2013-06-22
+  incident_time: 2013-06-22 23:28:18
+  nbr_affected_families: 1
+  nbr_affected_individuals: 1
+  events_sequence: MyText
+  dwelling_id: 1
+  damange_assessment: MyText
+  injuries_or_death: MyString
+  national_incident_id: 1
+  trainee_follow_up: MyString
+  date_follow_up: MyString
+  trainee_name: MyString
+  person_following_up: MyString
+  follow_up_result: MyString
+
+two:
+  notification_date: 2013-06-22
+  notification_time: 2013-06-22 23:28:18
+  notification_agency_id: 1
+  dispatcher_id: 1
+  address_line1: MyString
+  city: MyString
+  state: MyString
+  county: MyString
+  postal_code: MyString
+  rc_chapter: 1
+  verification_date: 2013-06-22
+  verification_time: 2013-06-22 23:28:18
+  verification_agency: 
+  memo_verification_info: MyText
+  incident_date: 2013-06-22
+  incident_time: 2013-06-22 23:28:18
+  nbr_affected_families: 1
+  nbr_affected_individuals: 1
+  events_sequence: MyText
+  dwelling_id: 1
+  damange_assessment: MyText
+  injuries_or_death: MyString
+  national_incident_id: 1
+  trainee_follow_up: MyString
+  date_follow_up: MyString
+  trainee_name: MyString
+  person_following_up: MyString
+  follow_up_result: MyString

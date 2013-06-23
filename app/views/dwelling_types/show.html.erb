@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @dwelling_type.name %>
+</p>
+
+<p>
+  <b>Story:</b>
+  <%= @dwelling_type.story %>
+</p>
+
+
+<%= link_to 'Edit', edit_dwelling_type_path(@dwelling_type) %> |
+<%= link_to 'Back', dwelling_types_path %>

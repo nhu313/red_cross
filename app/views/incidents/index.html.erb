@@ -1,0 +1,77 @@
+<h1>Listing incidents</h1>
+
+<table>
+  <tr>
+    <th>Notification date</th>
+    <th>Notification time</th>
+    <th>Notification agency</th>
+    <th>Dispatcher</th>
+    <th>Address line1</th>
+    <th>City</th>
+    <th>State</th>
+    <th>County</th>
+    <th>Postal code</th>
+    <th>Rc chapter</th>
+    <th>Verification date</th>
+    <th>Verification time</th>
+    <th>Verification agency</th>
+    <th>Memo verification info</th>
+    <th>Incident date</th>
+    <th>Incident time</th>
+    <th>Nbr affected families</th>
+    <th>Nbr affected individuals</th>
+    <th>Events sequence</th>
+    <th>Dwelling</th>
+    <th>Damange assessment</th>
+    <th>Injuries or death</th>
+    <th>National incident</th>
+    <th>Trainee follow up</th>
+    <th>Date follow up</th>
+    <th>Trainee name</th>
+    <th>Person following up</th>
+    <th>Follow up result</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @incidents.each do |incident| %>
+  <tr>
+    <td><%= incident.notification_date %></td>
+    <td><%= incident.notification_time %></td>
+    <td><%= incident.notification_agency_id %></td>
+    <td><%= incident.dispatcher_id %></td>
+    <td><%= incident.address_line1 %></td>
+    <td><%= incident.city %></td>
+    <td><%= incident.state %></td>
+    <td><%= incident.county %></td>
+    <td><%= incident.postal_code %></td>
+    <td><%= incident.rc_chapter %></td>
+    <td><%= incident.verification_date %></td>
+    <td><%= incident.verification_time %></td>
+    <td><%= incident.verification_agency %></td>
+    <td><%= incident.memo_verification_info %></td>
+    <td><%= incident.incident_date %></td>
+    <td><%= incident.incident_time %></td>
+    <td><%= incident.nbr_affected_families %></td>
+    <td><%= incident.nbr_affected_individuals %></td>
+    <td><%= incident.events_sequence %></td>
+    <td><%= incident.dwelling_id %></td>
+    <td><%= incident.damange_assessment %></td>
+    <td><%= incident.injuries_or_death %></td>
+    <td><%= incident.national_incident_id %></td>
+    <td><%= incident.trainee_follow_up %></td>
+    <td><%= incident.date_follow_up %></td>
+    <td><%= incident.trainee_name %></td>
+    <td><%= incident.person_following_up %></td>
+    <td><%= incident.follow_up_result %></td>
+    <td><%= link_to 'Show', incident %></td>
+    <td><%= link_to 'Edit', edit_incident_path(incident) %></td>
+    <td><%= link_to 'Destroy', incident, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Incident', new_incident_path %>

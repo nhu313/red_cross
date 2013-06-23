@@ -1,0 +1,41 @@
+<h1>Listing incident_responders</h1>
+
+<table>
+  <tr>
+    <th>Incident</th>
+    <th>Staff</th>
+    <th>Dispatcher</th>
+    <th>Dispatched date</th>
+    <th>Dispatched time</th>
+    <th>Date on scene</th>
+    <th>Time on scene</th>
+    <th>Date left scene</th>
+    <th>Time left scene</th>
+    <th>Initial responder</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @incident_responders.each do |incident_responder| %>
+  <tr>
+    <td><%= incident_responder.incident_id %></td>
+    <td><%= incident_responder.staff_id %></td>
+    <td><%= incident_responder.dispatcher_id %></td>
+    <td><%= incident_responder.dispatched_date %></td>
+    <td><%= incident_responder.dispatched_time %></td>
+    <td><%= incident_responder.date_on_scene %></td>
+    <td><%= incident_responder.time_on_scene %></td>
+    <td><%= incident_responder.date_left_scene %></td>
+    <td><%= incident_responder.time_left_scene %></td>
+    <td><%= incident_responder.initial_responder %></td>
+    <td><%= link_to 'Show', incident_responder %></td>
+    <td><%= link_to 'Edit', edit_incident_responder_path(incident_responder) %></td>
+    <td><%= link_to 'Destroy', incident_responder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Incident responder', new_incident_responder_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  incident_id: 1
+  family_id: 1
+  stock_type_id: 1
+  stock_amount: 1
+
+two:
+  incident_id: 1
+  family_id: 1
+  stock_type_id: 1
+  stock_amount: 1

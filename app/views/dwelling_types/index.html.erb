@@ -1,0 +1,25 @@
+<h1>Listing dwelling_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Story</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dwelling_types.each do |dwelling_type| %>
+  <tr>
+    <td><%= dwelling_type.name %></td>
+    <td><%= dwelling_type.story %></td>
+    <td><%= link_to 'Show', dwelling_type %></td>
+    <td><%= link_to 'Edit', edit_dwelling_type_path(dwelling_type) %></td>
+    <td><%= link_to 'Destroy', dwelling_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dwelling type', new_dwelling_type_path %>

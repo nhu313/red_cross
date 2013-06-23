@@ -1,0 +1,69 @@
+<%= form_for(@incident_assistance) do |f| %>
+  <% if @incident_assistance.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@incident_assistance.errors.count, "error") %> prohibited this incident_assistance from being saved:</h2>
+
+      <ul>
+      <% @incident_assistance.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :incident_id %><br />
+    <%= f.number_field :incident_id %>
+  </div>
+  <div class="field">
+    <%= f.label :family_id %><br />
+    <%= f.number_field :family_id %>
+  </div>
+  <div class="field">
+    <%= f.label :unit_floor %><br />
+    <%= f.text_field :unit_floor %>
+  </div>
+  <div class="field">
+    <%= f.label :case_number %><br />
+    <%= f.number_field :case_number %>
+  </div>
+  <div class="field">
+    <%= f.label :nbr_adult_receiving_assistance %><br />
+    <%= f.text_field :nbr_adult_receiving_assistance %>
+  </div>
+  <div class="field">
+    <%= f.label :nbr_children_receiving_assistance %><br />
+    <%= f.text_field :nbr_children_receiving_assistance %>
+  </div>
+  <div class="field">
+    <%= f.label :mass_care_service %><br />
+    <%= f.text_area :mass_care_service %>
+  </div>
+  <div class="field">
+    <%= f.label :health_services %><br />
+    <%= f.text_area :health_services %>
+  </div>
+  <div class="field">
+    <%= f.label :partner_services %><br />
+    <%= f.text_area :partner_services %>
+  </div>
+  <div class="field">
+    <%= f.label :disaster_services_technology %><br />
+    <%= f.text_area :disaster_services_technology %>
+  </div>
+  <div class="field">
+    <%= f.label :addition_info %><br />
+    <%= f.text_area :addition_info %>
+  </div>
+  <div class="field">
+    <%= f.label :unserviced %><br />
+    <%= f.check_box :unserviced %>
+  </div>
+  <div class="field">
+    <%= f.label :unserviced_reason %><br />
+    <%= f.text_field :unserviced_reason %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<%= form_for(@dwelling_type) do |f| %>
+  <% if @dwelling_type.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dwelling_type.errors.count, "error") %> prohibited this dwelling_type from being saved:</h2>
+
+      <ul>
+      <% @dwelling_type.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :story %><br />
+    <%= f.text_field :story %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

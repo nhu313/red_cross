@@ -1,0 +1,61 @@
+<h1>Listing staffs</h1>
+
+<table>
+  <tr>
+    <th>Salutation</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Suffix</th>
+    <th>Address line1</th>
+    <th>Address line2</th>
+    <th>Address line3</th>
+    <th>City</th>
+    <th>State</th>
+    <th>County</th>
+    <th>Country</th>
+    <th>Postal code</th>
+    <th>Responder</th>
+    <th>Dispatcher</th>
+    <th>Case worker</th>
+    <th>Home phone</th>
+    <th>Work phone</th>
+    <th>Mobile phone</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @staffs.each do |staff| %>
+  <tr>
+    <td><%= staff.salutation %></td>
+    <td><%= staff.first_name %></td>
+    <td><%= staff.last_name %></td>
+    <td><%= staff.suffix %></td>
+    <td><%= staff.address_line1 %></td>
+    <td><%= staff.address_line2 %></td>
+    <td><%= staff.address_line3 %></td>
+    <td><%= staff.city %></td>
+    <td><%= staff.state %></td>
+    <td><%= staff.county %></td>
+    <td><%= staff.country %></td>
+    <td><%= staff.postal_code %></td>
+    <td><%= staff.responder %></td>
+    <td><%= staff.dispatcher %></td>
+    <td><%= staff.case_worker %></td>
+    <td><%= staff.home_phone %></td>
+    <td><%= staff.work_phone %></td>
+    <td><%= staff.mobile_phone %></td>
+    <td><%= staff.latitude %></td>
+    <td><%= staff.longitude %></td>
+    <td><%= link_to 'Show', staff %></td>
+    <td><%= link_to 'Edit', edit_staff_path(staff) %></td>
+    <td><%= link_to 'Destroy', staff, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Staff', new_staff_path %>

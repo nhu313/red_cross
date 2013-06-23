@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  incident_id: 1
+  staff_id: 1
+  dispatcher_id: 1
+  dispatched_date: 2013-06-22
+  dispatched_time: 2013-06-22 20:44:34
+  date_on_scene: 2013-06-22
+  time_on_scene: 2013-06-22 20:44:34
+  date_left_scene: 2013-06-22
+  time_left_scene: 2013-06-22 20:44:34
+  initial_responder: false
+
+two:
+  incident_id: 1
+  staff_id: 1
+  dispatcher_id: 1
+  dispatched_date: 2013-06-22
+  dispatched_time: 2013-06-22 20:44:34
+  date_on_scene: 2013-06-22
+  time_on_scene: 2013-06-22 20:44:34
+  date_left_scene: 2013-06-22
+  time_left_scene: 2013-06-22 20:44:34
+  initial_responder: false

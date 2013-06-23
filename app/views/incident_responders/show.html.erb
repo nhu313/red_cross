@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Incident:</b>
+  <%= @incident_responder.incident_id %>
+</p>
+
+<p>
+  <b>Staff:</b>
+  <%= @incident_responder.staff_id %>
+</p>
+
+<p>
+  <b>Dispatcher:</b>
+  <%= @incident_responder.dispatcher_id %>
+</p>
+
+<p>
+  <b>Dispatched date:</b>
+  <%= @incident_responder.dispatched_date %>
+</p>
+
+<p>
+  <b>Dispatched time:</b>
+  <%= @incident_responder.dispatched_time %>
+</p>
+
+<p>
+  <b>Date on scene:</b>
+  <%= @incident_responder.date_on_scene %>
+</p>
+
+<p>
+  <b>Time on scene:</b>
+  <%= @incident_responder.time_on_scene %>
+</p>
+
+<p>
+  <b>Date left scene:</b>
+  <%= @incident_responder.date_left_scene %>
+</p>
+
+<p>
+  <b>Time left scene:</b>
+  <%= @incident_responder.time_left_scene %>
+</p>
+
+<p>
+  <b>Initial responder:</b>
+  <%= @incident_responder.initial_responder %>
+</p>
+
+
+<%= link_to 'Edit', edit_incident_responder_path(@incident_responder) %> |
+<%= link_to 'Back', incident_responders_path %>

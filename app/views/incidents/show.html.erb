@@ -1,0 +1,145 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Notification date:</b>
+  <%= @incident.notification_date %>
+</p>
+
+<p>
+  <b>Notification time:</b>
+  <%= @incident.notification_time %>
+</p>
+
+<p>
+  <b>Notification agency:</b>
+  <%= @incident.notification_agency_id %>
+</p>
+
+<p>
+  <b>Dispatcher:</b>
+  <%= @incident.dispatcher_id %>
+</p>
+
+<p>
+  <b>Address line1:</b>
+  <%= @incident.address_line1 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @incident.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @incident.state %>
+</p>
+
+<p>
+  <b>County:</b>
+  <%= @incident.county %>
+</p>
+
+<p>
+  <b>Postal code:</b>
+  <%= @incident.postal_code %>
+</p>
+
+<p>
+  <b>Rc chapter:</b>
+  <%= @incident.rc_chapter %>
+</p>
+
+<p>
+  <b>Verification date:</b>
+  <%= @incident.verification_date %>
+</p>
+
+<p>
+  <b>Verification time:</b>
+  <%= @incident.verification_time %>
+</p>
+
+<p>
+  <b>Verification agency:</b>
+  <%= @incident.verification_agency %>
+</p>
+
+<p>
+  <b>Memo verification info:</b>
+  <%= @incident.memo_verification_info %>
+</p>
+
+<p>
+  <b>Incident date:</b>
+  <%= @incident.incident_date %>
+</p>
+
+<p>
+  <b>Incident time:</b>
+  <%= @incident.incident_time %>
+</p>
+
+<p>
+  <b>Nbr affected families:</b>
+  <%= @incident.nbr_affected_families %>
+</p>
+
+<p>
+  <b>Nbr affected individuals:</b>
+  <%= @incident.nbr_affected_individuals %>
+</p>
+
+<p>
+  <b>Events sequence:</b>
+  <%= @incident.events_sequence %>
+</p>
+
+<p>
+  <b>Dwelling:</b>
+  <%= @incident.dwelling_id %>
+</p>
+
+<p>
+  <b>Damange assessment:</b>
+  <%= @incident.damange_assessment %>
+</p>
+
+<p>
+  <b>Injuries or death:</b>
+  <%= @incident.injuries_or_death %>
+</p>
+
+<p>
+  <b>National incident:</b>
+  <%= @incident.national_incident_id %>
+</p>
+
+<p>
+  <b>Trainee follow up:</b>
+  <%= @incident.trainee_follow_up %>
+</p>
+
+<p>
+  <b>Date follow up:</b>
+  <%= @incident.date_follow_up %>
+</p>
+
+<p>
+  <b>Trainee name:</b>
+  <%= @incident.trainee_name %>
+</p>
+
+<p>
+  <b>Person following up:</b>
+  <%= @incident.person_following_up %>
+</p>
+
+<p>
+  <b>Follow up result:</b>
+  <%= @incident.follow_up_result %>
+</p>
+
+
+<%= link_to 'Edit', edit_incident_path(@incident) %> |
+<%= link_to 'Back', incidents_path %>

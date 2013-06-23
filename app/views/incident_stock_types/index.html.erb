@@ -1,0 +1,29 @@
+<h1>Listing incident_stock_types</h1>
+
+<table>
+  <tr>
+    <th>Incident</th>
+    <th>Family</th>
+    <th>Stock type</th>
+    <th>Stock amount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @incident_stock_types.each do |incident_stock_type| %>
+  <tr>
+    <td><%= incident_stock_type.incident_id %></td>
+    <td><%= incident_stock_type.family_id %></td>
+    <td><%= incident_stock_type.stock_type_id %></td>
+    <td><%= incident_stock_type.stock_amount %></td>
+    <td><%= link_to 'Show', incident_stock_type %></td>
+    <td><%= link_to 'Edit', edit_incident_stock_type_path(incident_stock_type) %></td>
+    <td><%= link_to 'Destroy', incident_stock_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Incident stock type', new_incident_stock_type_path %>

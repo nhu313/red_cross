@@ -1,0 +1,57 @@
+<%= form_for(@incident_responder) do |f| %>
+  <% if @incident_responder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@incident_responder.errors.count, "error") %> prohibited this incident_responder from being saved:</h2>
+
+      <ul>
+      <% @incident_responder.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :incident_id %><br />
+    <%= f.number_field :incident_id %>
+  </div>
+  <div class="field">
+    <%= f.label :staff_id %><br />
+    <%= f.number_field :staff_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dispatcher_id %><br />
+    <%= f.number_field :dispatcher_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dispatched_date %><br />
+    <%= f.date_select :dispatched_date %>
+  </div>
+  <div class="field">
+    <%= f.label :dispatched_time %><br />
+    <%= f.time_select :dispatched_time %>
+  </div>
+  <div class="field">
+    <%= f.label :date_on_scene %><br />
+    <%= f.date_select :date_on_scene %>
+  </div>
+  <div class="field">
+    <%= f.label :time_on_scene %><br />
+    <%= f.time_select :time_on_scene %>
+  </div>
+  <div class="field">
+    <%= f.label :date_left_scene %><br />
+    <%= f.date_select :date_left_scene %>
+  </div>
+  <div class="field">
+    <%= f.label :time_left_scene %><br />
+    <%= f.time_select :time_left_scene %>
+  </div>
+  <div class="field">
+    <%= f.label :initial_responder %><br />
+    <%= f.check_box :initial_responder %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
