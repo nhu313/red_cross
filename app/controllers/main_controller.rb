@@ -27,10 +27,10 @@ class MainController < ApplicationController
                              dispatched_date: params[:dispatched_date], #needs adding
                              dispatched_time: params[:dispatched_time],
                              dispatcher_id: params[:dispatcher],
-                             incident_id:, #needs adding
+                             incident_id: params[:in], #needs adding
                              initial_responder: params[:initial_responder], #needs adding
-                             staff_id:, #needs adding
-                             time_left_scene: params[:time_left_scene] #needs adding
+                             staff_id: params[:staff_id], #needs adding
+                             time_left_scene: params[:time_left_scene], #needs adding
                              time_on_scene: params[:time_on_scene] #needs adding
                              )
 
@@ -43,15 +43,15 @@ class MainController < ApplicationController
                               case_number: params[:case_number], # name not in main page form
                               disaster_services_technology: params[:disaster_services_technology], # name not in main page form
                               family_id: params[:family_id], #not in form
-                              health_services: params[:],
-                              incident_id: params[:],
-                              mass_care_service: params[:],
-                              nbr_adult_receiving_assistance: params[:],
-                              nbr_children_receiving_assistance: params[:],
-                              partner_services: params[:],
-                              unit_floor: params[:],
-                              unserviced: params[:],
-                              unserviced_reason: params[:]
+                              health_services: params[:health_services], #in form as 'services', needs to be broken out
+                              incident_id: params[:incident_id], #not on form
+                              mass_care_service: params[:mass_care_service], #on form as "services", needs to broken out.
+                              nbr_adult_receiving_assistance: params[:adults_serviced],
+                              nbr_children_receiving_assistance: params[:children_service],
+                              partner_services: params[:partner_services], #on form as "services", needs to be broken out
+                              unit_floor: params[:unit_floor], #not in form
+                              unserviced: params[:unserviced], #not in form
+                              unserviced_reason: params[:unserviced] #not in form
                               )
   end
 
