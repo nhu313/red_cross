@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130623044027) do
+ActiveRecord::Schema.define(:version => 20130623184232) do
 
   create_table "clients", :force => true do |t|
     t.integer  "family_id"
@@ -65,6 +65,12 @@ ActiveRecord::Schema.define(:version => 20130623044027) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "families", :force => true do |t|
+    t.integer  "cliend_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "genders", :force => true do |t|
     t.string   "type"
     t.datetime "created_at", :null => false
@@ -109,11 +115,11 @@ ActiveRecord::Schema.define(:version => 20130623044027) do
     t.integer  "staff_id"
     t.integer  "dispatcher_id"
     t.date     "dispatched_date"
-    t.string     "dispatched_time"
+    t.time     "dispatched_time"
     t.date     "date_on_scene"
-    t.string     "time_on_scene"
+    t.time     "time_on_scene"
     t.date     "date_left_scene"
-    t.string     "time_left_scene"
+    t.time     "time_left_scene"
     t.boolean  "initial_responder"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
@@ -143,7 +149,7 @@ ActiveRecord::Schema.define(:version => 20130623044027) do
     t.string     "verification_time"
     t.integer  "verification_agency"
     t.text     "memo_verification_info"
-    t.date     "incident_date"
+    t.string     "incident_date"
     t.string     "incident_time"
     t.integer  "nbr_affected_families"
     t.integer  "nbr_affected_individuals"
