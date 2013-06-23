@@ -1,6 +1,6 @@
 (function () {
     var $form = $('#main_form'),
-        i = 0;
+        i = 0, m = 1, familyArr = [];
 
     function getGeolocation () {
         if (navigator.geolocation) {
@@ -59,18 +59,25 @@
 
     });
     
-$('add_member').click(function(){
-    var ele = document.getElementById("toggleText");
-    var text = document.getElementById("displayText");
-    if(ele.style.display == "block") {
-            ele.style.display = "none";
-        text.innerHTML = "show";
-    }
-    else {
-        ele.style.display = "block";
-        text.innerHTML = "hide";
-    }
-}); 
+$('#add_member').click(function () {
+    e.preventDefault();
+        
+    return function () {
+        m++
+        $last = $('.client').last();
+        clientName = $('[name=client_name]').last().val();
+        clientNum = $('[name=client_number]').last().val();
+        var client = {
+            name : clientName,
+            number: clientNum
+        }
+        familyArr.push(client)
+        console.log(client);
+        console.log($last);
+        $last.after($('<label>' + m + '</label><input name="client_name" class="span5 client" placeholder="Name"><input name="client_number" class="span5 client" placeholder="Phone number">'));
+    }();
+});
+
 fields = 0;
 function addInput() {
     if (fields != 10) {
