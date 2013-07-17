@@ -31,7 +31,7 @@
     };
 
     $form.submit(function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         i++;
 
         var url  = $form.attr('action'),
@@ -56,7 +56,7 @@
         } else {
             localStorage[i]['sent'] = false;
         }
-
+        return false;
     });
     
 $('#add_member').click(function () {
@@ -78,22 +78,22 @@ $('#add_member').click(function () {
     }();
 });
 
-fields = 0;
-function addInput() {
-    if (fields != 10) {
-    document.getElementById('text').innerHTML += "<input type='file' value='' /><br />";
-fields += 1;
-} else {
-document.getElementById('text').innerHTML += "<br />Only 10 upload fields allowed.";
-document.form.add.disabled=true;
-}
-}
-$('#add').click(function() {
-    var p = $(this).closest('p'),
-        i = p.index() + 1;
+// fields = 0;
+// function addInput() {
+//     if (fields != 10) {
+//     document.getElementById('text').innerHTML += "<input type='file' value='' /><br />";
+// fields += 1;
+// } else {
+// document.getElementById('text').innerHTML += "<br />Only 10 upload fields allowed.";
+// document.form.add.disabled=true;
+// }
+// }
+// $('#add').click(function() {
+//     var p = $(this).closest('p'),
+//         i = p.index() + 1;
     
-    $(p).before('<textarea class="span5" name="all_clients" placeholder="Name(s)/Location(s) and Phone Number(s) of ALL Client(s):"></textarea>');    
-    return false; 
-});
+//     $(p).before('<textarea class="span5" name="all_clients" placeholder="Name(s)/Location(s) and Phone Number(s) of ALL Client(s):"></textarea>');    
+//     return false; 
+// });
 
 })();

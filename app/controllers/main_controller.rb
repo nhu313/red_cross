@@ -39,9 +39,9 @@ class MainController < ApplicationController
       date_follow_up: params[:date_follow_up],
       trainee_name: params[:trainee_name],
       person_following_up: params[:person_following_up],
-      follow_up_result: params[:follow_up_result],
-      created_at: params[:created_at],
-      updated_at: params[:updated_at] 
+      follow_up_result: params[:follow_up_result]
+      # created_at: params[:created_at],
+      # updated_at: params[:updated_at] 
       )              
 
 
@@ -89,9 +89,9 @@ class MainController < ApplicationController
       first_name: params[:first_name],
       last_name: params[:last_name],
       suffix: params[:suffix],
-      address_line_one: params[:address_line_one],
-      address_line_two: params[:address_line_two],
-      address_line_three: params[:address_line_three],
+      # address_line_one: params[:address_line_one],
+      # address_line_two: params[:address_line_two],
+      # address_line_three: params[:address_line_three],
       state: params[:state],
       county: params[:county],
       postal_code: params[:postal_code],
@@ -104,10 +104,16 @@ class MainController < ApplicationController
       ethnicity_type_id: params[:ethnicity_type_id],
       language_id: params[:language_id],
       gender_type_id: params[:gender_type_id],
-      economic_status_type_id: params[:economic_status_type_id],
-      created_at: params[:created_at],
-      updated_at: params[:updated_at]
+      economic_status_type_id: params[:economic_status_type_id]
+      # created_at: params[:created_at],
+      # updated_at: params[:updated_at]
       )
+
+  end
+
+  def test
+
+    render action:"test"
 
   end
 

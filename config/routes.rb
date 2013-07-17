@@ -1,6 +1,7 @@
 RedCross::Application.routes.draw do
   get "main/display"
   post "main/new"
+  get "main/test"
 
   resources :stock_types
 
